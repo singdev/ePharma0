@@ -1,0 +1,23 @@
+{
+  "name": "clean_architecture",
+  "version": "1.0.0",
+  "description": "Mise en place d'une structure de fichier de pour clean architecture de Uncle Bob <https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html>",
+  "main": "index.js",
+  "scripts": {
+    "watch-sass": "sass --watch ./lib/src/04_framework/web/app/sass:./lib/src/04_framework/web/app/public/css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nve Hounkponou Orphee",
+  "license": "ISC",
+  "dependencies": {
+    "api-key-auth": "^0.2.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "generate-password": "^1.6.0",
+    "mongoose": "^5.12.2",
+    "node-oauth2-server": "^2.4.0",
+    "nodemailer": "^6.5.0",
+    "pug": "^3.0.2"
+  }
+}

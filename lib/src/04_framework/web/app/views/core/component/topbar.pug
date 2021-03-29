@@ -1,0 +1,24 @@
+header.topbar
+    .main-icon
+      a(href="/home") 
+        img.logo(src="/img/logo.png" style="width: 48px;" alt="Logo BONUS" id="topbar-logo")
+      span.menu-icon(class="iconmoon icon-menu" id="topbar-menu-icon")
+
+    .right
+        .dropdown
+          .dropdown-button
+            span.user-round(class="iconmoon icon-user-plain")
+            span(class="material-icons") arrow_drop_down
+          .dropdown-menu
+            span#topbar-dropdown-fullname -
+            a(id="dropdown-profil")
+              span(class="iconmoon icon-user")
+              span.text-paragraph Mon profil 
+            
+            a(id="dropdown-password")
+              span(class="iconmoon icon-key")
+              span.text-paragraph Changer de mot de passe 
+              
+            a(id="dropdown-deconnexion")
+              span(class="iconmoon icon-logout")
+              span.text-paragraph Déconnexion   

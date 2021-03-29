@@ -1,0 +1,47 @@
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem;
+    
+    input, select, textarea {
+        border: none;
+        border-bottom: 1px solid lighten($color: #212123, $amount: 30);
+        font-size: 12px;
+        border-radius: 0;
+        width: 100%;
+    }
+    
+    textarea {
+        background-color: transparent;
+        border: 1px solid lighten($color: #212123, $amount: 30);
+    }
+    
+    label {
+        font-size: 12px;
+        font-weight: bold;
+        padding-bottom: 0.4rem;
+    }
+
+    input[type='file'] {
+        display: none;
+    }
+    
+    .input {
+        i {
+            font-style: normal;
+        }
+        display: inline-block;
+        border: 1px solid lighten($color: #212123, $amount: 30);
+        padding: 0.5rem;
+    }
+    
+    .input:hover {
+        cursor: pointer;
+    }
+    
+    input:disabled {
+        border: none;
+    }
+}

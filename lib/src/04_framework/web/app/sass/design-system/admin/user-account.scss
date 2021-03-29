@@ -1,0 +1,62 @@
+@use '../../shared/variable';
+
+.page-content {
+    
+    .content {
+        .main-container {
+            
+            .top-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                padding: 1rem;
+                margin-bottom: 2rem;
+            
+                .account-count-container {
+                    background-color: lighten($color: variable.$color-sing-3, $amount: 0);
+                    color: lighten($color: variable.$color-enterprise, $amount: 100);
+                    width: 200px;
+                    padding: 0.5rem 1rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-shadow: 1px 2px 5px #212123;
+                    margin-top: 1rem;
+                    .big-text {
+                        font-size: 2em;
+                        padding: 0.5rem;
+                    }
+                }
+            }
+            
+            
+            .list {
+                .list-head {
+                    background-color: variable.$color-sing-3;
+                }
+                
+                .list-row {
+                    .list-row-data {
+                        .label {
+                            color: variable.$color-sing-3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.drakside-container {
+    .form {
+        .actions {
+            display: flex;
+            justify-content: flex-start;
+            button {
+                margin: 0.5rem;
+            }
+        }
+    }
+}

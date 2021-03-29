@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="authorization" content="KeyId='ca437661-ffd1-48aa-887f-b0a50fed4952'">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <p>Test de l'api</p>
+    <p class="message"></p>
+    
+    <script>
+        
+        window.addEventListener('load', async () => {
+            try {
+            const res = await fetch("http://localhost:3000/api/protected", {
+                headers: {
+                    'authorization':'Signature keyId="ca437661-ffd1-48aa-887f-b0a50fed4952",algorithm="hmac-sha256",headers="host",signature="ylej1BYFi5cWl+Q/O4QjU22Gb3FZm93/c2Y4S3mj28c="',
+                }
+            });
+        if(res.status == 200){
+            document.querySelector(".message").innerHTML = await res.text();
+        } else {
+            document.querySelector(".message").innerHTML = await res.text();
+        }
+        } catch(err){
+         console.log(err);   
+        }
+        });
+        
+    </script>
+</body>
+</html>

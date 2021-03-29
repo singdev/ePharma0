@@ -1,0 +1,30 @@
+include ../../core/layout.pug
+
+block main
+  link(rel="stylesheet" href="/css/design-system/login/login.css")
+  main
+    .side-nav
+      img(src="/img/logo.png" alt="Logo" class="logo-b")
+      span.text-capital METTRE UNE PHRASE ACCROCHEUSE
+      span.text-paragraph Expliquer c'est de quoi traite l'application en quelque mots
+      button(class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" onclick="window.location.href='https://gobonus.ga'") En savoir plus
+    .main-container
+      header
+        span.text-little(class="text-align-right") Vous n'avez pas encore de compte ?
+          a(href="#") Inscrivez-vous 
+
+      img.logo(src="/img/logo.png" alt="Logo bonus" class="imageSpin")
+      span.text-head1 Le nom de l'application
+
+      .form
+        div(class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label")
+          input(class="mdl-textfield__input" type="text" id="username")
+          label(class="mdl-textfield__label" for="username") Adresse Email
+
+        div(class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label")
+          input(class="mdl-textfield__input" type="password" id="password")
+          label(class="mdl-textfield__label" for="password") Mot de passe
+
+        button(class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="loginBtn") Se connecter
+
+    script(src="/js/design-system/login/login.js" type="module") 

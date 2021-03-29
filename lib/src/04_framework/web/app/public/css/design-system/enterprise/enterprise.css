@@ -1,0 +1,203 @@
+.text-head1 {
+  font-size: 1.5em;
+  color: black;
+  font-weight: normal;
+}
+
+.text-head2 {
+  font-size: 1.5em;
+  color: black;
+  font-weight: normal;
+}
+
+.text-head3 {
+  font-size: 1.5em;
+  color: black;
+  font-weight: normal;
+}
+
+.text-paraph {
+  font-size: 1.5em;
+  color: black;
+  font-weight: normal;
+}
+
+.text-little {
+  font-size: 12px;
+  color: #939494;
+  font-weight: lighter;
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
+.text-title {
+  font-size: 1.1em;
+  color: black;
+  font-weight: normal;
+}
+
+.text-capital {
+  font-size: 1.5em;
+  color: black;
+  font-weight: normal;
+  line-height: 1.6em;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateX(180deg);
+    transform-origin: 0% 0%;
+    ms-transform-origin: 0% 0%;
+    moz-transform-origin: 0% 0%;
+    moz-transform: rotateX(180deg);
+    ms-transform: rotateX(180deg);
+  }
+  25% {
+    transform: rotateX(100deg);
+    transform-origin: 0% 0%;
+    ms-transform-origin: 0% 0%;
+    moz-transform-origin: 0% 0%;
+    moz-transform: rotateX(180deg);
+    ms-transform: rotateX(180deg);
+  }
+  50% {
+    transform: rotateX(0deg);
+    transform-origin: 0% 0%;
+    ms-transform-origin: 0% 0%;
+    moz-transform-origin: 0% 0%;
+    moz-transform: rotateX(0deg);
+    ms-transform: rotateX(0deg);
+  }
+  75% {
+    transform: rotateX(45deg);
+    transform-origin: 0% 0%;
+    ms-transform-origin: 0% 0%;
+    moz-transform-origin: 0% 0%;
+    moz-transform: rotateX(45deg);
+    ms-transform: rotateX(45deg);
+  }
+  100% {
+    transform-origin: 0% 0%;
+    transform: rotateX(0deg);
+    ms-transform-origin: 0% 0%;
+    moz-transform-origin: 0% 0%;
+    moz-transform: rotateX(0deg);
+    ms-transform: rotateX(0deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotateX(180deg);
+  }
+  25% {
+    -webkit-transform: rotateX(100deg);
+  }
+  50% {
+    -webkit-transform: rotateX(0deg);
+  }
+  75% {
+    -webkit-transform: rotateX(45deg);
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+  }
+}
+.imageSpin {
+  animation-name: spin;
+  animation-timing-function: linear;
+  animation-duration: 0.8s;
+  -webkit-animation-name: spin;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-duration: 1s;
+}
+
+.icons {
+  width: 24px;
+}
+
+.page-content .actions-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.5rem;
+  width: 100%;
+}
+.page-content .actions-container button {
+  margin-right: 0.5rem;
+}
+.page-content .actions-container label {
+  width: fit-content;
+  margin-right: 2rem;
+}
+.page-content .content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.page-content .content .main-container {
+  flex: 1;
+  padding: 1rem;
+}
+.page-content .content .main-container .header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1px;
+  flex-wrap: wrap;
+}
+.page-content .content .main-container .header-container #enterprise {
+  color: #597b80;
+  font-weight: bold;
+}
+.page-content .content .main-container .header-container .logo-container {
+  width: 156px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+.page-content .content .main-container .header-container .logo-container #logo-url {
+  width: 156px;
+}
+.page-content .content .main-container .header-container .text-container {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.page-content .content .main-container .header-container .text-container a {
+  padding-top: 1rem;
+  font-size: 14px;
+  color: #597b80;
+  font-weight: bold;
+}
+.page-content .content .form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.page-content .content .form .form-group {
+  width: 300px;
+  max-width: 90%;
+}
+
+.form-group label {
+  color: #597b80;
+}
+
+/*# sourceMappingURL=enterprise.css.map */

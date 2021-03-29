@@ -1,0 +1,115 @@
+@use '../../shared/variable';
+
+$url: lighten(variable.$color-sing-1, 50);
+
+.widget-container {
+    padding: 1rem;
+    padding-left: 6rem;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    
+    .widget {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        box-shadow: 1px 2px 10px #444;
+        width: 400px;
+        margin: 1rem;
+        text-decoration: none;
+        border-radius: 4px;
+        overflow: hidden;
+        transition: 0.4s;
+
+        .widget-body {
+            height: 13rem;
+            border-bottom: 1px solid #777;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 1rem;
+            background: linear-gradient(#84236355, #0000008c),$url;
+            background-size: cover;
+            
+            .text {
+                color: lighten($color: #212123, $amount: 100);
+                font-size: 1.3em;
+                font-family: variable.$font-secondary;
+                text-decoration: none;
+                padding-bottom: 0.5rem;
+            }
+            
+            .title {
+                color: lighten($color: #212123, $amount: 100);
+                font-size: 12px;
+            }
+        }
+        
+        .widget-title {
+            padding: 0.5rem;
+            
+            .iconmoon {
+                font-weight: bold;
+                margin-right: 1rem;
+                font-size: 1.3em;
+                color: variable.$color-sing-2;
+            }
+            
+            .title {
+                color: variable.$color-sing-2;
+                font-size: 1.3em;
+            }
+        }
+    }
+    
+    .widget:hover {
+        .widget-body {
+            transition: 0.4s;
+            background: linear-gradient(#842363c4, #000000dc),$url;
+            background-size: cover;
+        }
+    }
+    
+    .profil {
+        .widget-title {
+            .iconmoon, .title {
+                color: variable.$color-user-account;
+            }
+        }
+    }
+    
+    .profil:hover {
+        .widget-body {
+            background: linear-gradient(#148026c4, #000000dc),$url;
+            background-size: cover;
+        }
+    }
+    
+    .enterprise {
+        .widget-title {
+            .iconmoon, .title {
+                color: variable.$color-enterprise;
+            }
+        }
+    }
+    
+    .enterprise:hover {
+        .widget-body {
+            background: linear-gradient(#597b80c4, #000000dc), $url;
+            background-size: cover;
+        }
+    }
+}
+
+@media (max-width: 750px){
+    .widget-container {
+        padding: 1rem;
+        .widget {
+            width: 100%;
+        }
+    }
+}

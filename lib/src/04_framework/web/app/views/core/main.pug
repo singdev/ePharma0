@@ -1,0 +1,11 @@
+extends header.pug
+
+
+block content 
+  body 
+    block main 
+      include ./component/topbar.pug
+      main 
+        include ./component/sidebar.pug
+        .main-wrapper 
+          block wrapper

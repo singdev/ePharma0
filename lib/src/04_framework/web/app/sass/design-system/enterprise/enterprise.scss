@@ -1,0 +1,89 @@
+@use '../../shared/variable';
+
+.page-content  {
+    
+    .actions-container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0.5rem;
+        width: 100%;
+        
+        button {
+            margin-right: 0.5rem;
+        }
+        
+        label {
+            width: fit-content;
+            margin-right: 2rem;
+        }
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        
+        .main-container {
+            flex: 1;
+            padding: 1rem;
+            
+            .header-container {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 2rem;
+                padding-bottom: 1px;
+                flex-wrap: wrap;
+                
+                #enterprise {
+                    color: variable.$color-enterprise;
+                    font-weight: bold;
+                }
+                
+                .logo-container {
+                    width: 156px;
+                    height: 200px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 1rem;
+                
+                    #logo-url {
+                        width: 156px;
+                    }
+                }
+                
+                .text-container {
+                    margin: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    
+                    a {
+                        padding-top: 1rem;
+                        font-size: 14px;
+                        color: variable.$color-enterprise;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        
+        .form {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .form-group {
+                width: 300px;
+                max-width: 90%;
+            }
+        }
+    }
+}
+
+.form-group {
+    label {
+        color: variable.$color-enterprise;
+    }
+}

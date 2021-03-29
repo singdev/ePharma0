@@ -1,0 +1,169 @@
+.text-head1 {
+  font-size: 1.5em;
+  color: black;
+  font-weight: normal;
+}
+
+.text-head2 {
+  font-size: 1.5em;
+  color: black;
+  font-weight: normal;
+}
+
+.text-head3 {
+  font-size: 1.5em;
+  color: black;
+  font-weight: normal;
+}
+
+.text-paraph {
+  font-size: 1.5em;
+  color: black;
+  font-weight: normal;
+}
+
+.text-little {
+  font-size: 12px;
+  color: #939494;
+  font-weight: lighter;
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
+.text-title {
+  font-size: 1.1em;
+  color: black;
+  font-weight: normal;
+}
+
+.text-capital {
+  font-size: 1.5em;
+  color: black;
+  font-weight: normal;
+  line-height: 1.6em;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateX(180deg);
+    transform-origin: 0% 0%;
+    ms-transform-origin: 0% 0%;
+    moz-transform-origin: 0% 0%;
+    moz-transform: rotateX(180deg);
+    ms-transform: rotateX(180deg);
+  }
+  25% {
+    transform: rotateX(100deg);
+    transform-origin: 0% 0%;
+    ms-transform-origin: 0% 0%;
+    moz-transform-origin: 0% 0%;
+    moz-transform: rotateX(180deg);
+    ms-transform: rotateX(180deg);
+  }
+  50% {
+    transform: rotateX(0deg);
+    transform-origin: 0% 0%;
+    ms-transform-origin: 0% 0%;
+    moz-transform-origin: 0% 0%;
+    moz-transform: rotateX(0deg);
+    ms-transform: rotateX(0deg);
+  }
+  75% {
+    transform: rotateX(45deg);
+    transform-origin: 0% 0%;
+    ms-transform-origin: 0% 0%;
+    moz-transform-origin: 0% 0%;
+    moz-transform: rotateX(45deg);
+    ms-transform: rotateX(45deg);
+  }
+  100% {
+    transform-origin: 0% 0%;
+    transform: rotateX(0deg);
+    ms-transform-origin: 0% 0%;
+    moz-transform-origin: 0% 0%;
+    moz-transform: rotateX(0deg);
+    ms-transform: rotateX(0deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotateX(180deg);
+  }
+  25% {
+    -webkit-transform: rotateX(100deg);
+  }
+  50% {
+    -webkit-transform: rotateX(0deg);
+  }
+  75% {
+    -webkit-transform: rotateX(45deg);
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+  }
+}
+.imageSpin {
+  animation-name: spin;
+  animation-timing-function: linear;
+  animation-duration: 0.8s;
+  -webkit-animation-name: spin;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-duration: 1s;
+}
+
+.icons {
+  width: 24px;
+}
+
+.page-content .content .main-container .top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+.page-content .content .main-container .top-container .account-count-container {
+  background-color: #d3b42c;
+  color: white;
+  width: 200px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 2px 5px #212123;
+  margin-top: 1rem;
+}
+.page-content .content .main-container .top-container .account-count-container .big-text {
+  font-size: 2em;
+  padding: 0.5rem;
+}
+.page-content .content .main-container .list .list-head {
+  background-color: #d3b42c;
+}
+.page-content .content .main-container .list .list-row .list-row-data .label {
+  color: #d3b42c;
+}
+
+.drakside-container .form .actions {
+  display: flex;
+  justify-content: flex-start;
+}
+.drakside-container .form .actions button {
+  margin: 0.5rem;
+}
+
+/*# sourceMappingURL=user-account.css.map */

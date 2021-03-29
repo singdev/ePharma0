@@ -1,0 +1,51 @@
+.page-content {
+  background: white;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 0.5px 5px #777;
+  margin-left: 8rem;
+}
+.page-content .content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.page-content .content .main-container {
+  padding: 1rem;
+  flex: 3;
+}
+.page-content .content .drakside-container {
+  flex: 1;
+  width: 400px;
+  max-width: 100%;
+  padding: 1rem;
+  color: #9f9fa4;
+  background-color: #535358;
+}
+.page-content .content .drakside-container span {
+  display: block;
+  padding: 0.5rem;
+}
+.page-content .content .drakside-container #username {
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #9f9fa4;
+  display: block;
+}
+.page-content .content .drakside-container .border-text {
+  padding: 0.5rem;
+  border: 1.5px solid #9f9fa4;
+}
+.page-content .content .drakside-container .form-group input, .page-content .content .drakside-container .form-group select, .page-content .content .drakside-container .form-group textarea {
+  color: #eeeeef;
+  background: transparent;
+  border-bottom-color: #eeeeef;
+}
+.page-content .content .drakside-container .form-group label {
+  font-weight: normal;
+  color: #eeeeef;
+}
+
+/*# sourceMappingURL=page.css.map */
