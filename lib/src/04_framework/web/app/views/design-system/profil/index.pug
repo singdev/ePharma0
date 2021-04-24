@@ -8,9 +8,11 @@ block wrapper
       strong Mes informations personnelles
 
     .profils
-      p#nom
-      p#prenom
-      p#email
-      p#telephone
+      input(type="text")#nom
+      input(type="text")#prenom
+      input(type="text")#email
+      input(type="text")#telephone
 
+    button#apply-update Appliquer
+    
   script(src="/js/design-system/profil/profil.js" type="module") 
