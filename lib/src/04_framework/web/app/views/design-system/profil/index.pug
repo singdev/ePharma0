@@ -1,0 +1,18 @@
+extends ../../core/main.pug
+
+block wrapper
+  link(rel="stylesheet" href="/css/design-system/profil/profil.css")
+
+  .main-container
+    span.text-title 
+      strong Mes informations personnelles
+
+    .profils
+      input(type="text")#nom
+      input(type="text")#prenom
+      input(type="text")#email
+      input(type="text")#telephone
+
+    button#apply-update Appliquer
+    
+  script(src="/js/design-system/profil/profil.js" type="module") 

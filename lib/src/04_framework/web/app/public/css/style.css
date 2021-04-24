@@ -687,10 +687,10 @@
 .side-bar .side-bar-item-icon:hover {
   cursor: pointer;
 }
-.side-bar .marketplace .side-bar-item-icon {
-  background: linear-gradient(#842363, #842363);
+.side-bar .profil .side-bar-item-icon {
+  background: linear-gradient(#721375, #cc2895);
 }
-.side-bar .marketplace .side-bar-menu-item:hover .text-title, .side-bar .marketplace .side-bar-menu-item:hover .iconmoon {
+.side-bar .profil .side-bar-menu-item:hover .text-title, .side-bar .profil .side-bar-menu-item:hover .iconmoon {
   color: #842363;
 }
 .side-bar .entreprise .side-bar-item-icon {
@@ -698,12 +698,6 @@
 }
 .side-bar .entreprise .side-bar-menu-item:hover .text-title, .side-bar .entreprise .side-bar-menu-item:hover .iconmoon {
   color: #597b80;
-}
-.side-bar .profil .side-bar-item-icon {
-  background: linear-gradient(#148026, #148026);
-}
-.side-bar .profil .side-bar-menu-item:hover .text-title, .side-bar .profil .side-bar-menu-item:hover .iconmoon {
-  color: #148026;
 }
 .side-bar .admin .side-bar-item-icon {
   background: linear-gradient(#d3b42c, #d3b42c);

@@ -219,9 +219,9 @@
         cursor: pointer;
     }
     
-    .marketplace {
+    .profil {
         .side-bar-item-icon {
-            background: linear-gradient(#842363,  #842363);
+            background: linear-gradient(#721375,  #cc2895);
         }
         .side-bar-menu-item:hover {
             .text-title, .iconmoon {
@@ -237,17 +237,6 @@
         .side-bar-menu-item:hover {
             .text-title, .iconmoon {
                 color: #597b80;
-            }
-        }
-    }
-    
-    .profil {
-        .side-bar-item-icon {
-            background: linear-gradient(#148026,  #148026);
-        }
-        .side-bar-menu-item:hover {
-            .text-title, .iconmoon {
-                color: #148026;
             }
         }
     }
@@ -333,3 +322,4 @@ footer {
         justify-content: center;
     }
 }
+
