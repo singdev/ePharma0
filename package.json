@@ -18,6 +18,8 @@
     "mongoose": "^5.12.2",
     "node-oauth2-server": "^2.4.0",
     "nodemailer": "^6.5.0",
-    "pug": "^3.0.2"
+    "pug": "^3.0.2",
+    "socket.io": "^4.0.1",
+    "socket.io-client": "^4.0.1"
   }
 }
