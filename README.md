@@ -10,3 +10,11 @@ NodeJS
 Socket.IO
 MongoDB
 Sass
+
+## Synchronization
+
+Pour tester la synchronization il faut creer une copie du dossier epharma0 et modifier les informations suivant dans la copie:
+
+- Le port de l'application
+- Le nom de la base de donnees
+- L'URL du remote-epg
